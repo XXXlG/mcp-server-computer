@@ -1,0 +1,80 @@
+2026-09-13T09:10:02.599+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.computer.FileSystemServiceTest     : Starting FileSystemServiceTest using Java 17.0.9 with PID 15702 (started by xxliang in /Users/xxliang/个人资料/ddd_project/mcp-server/mcp-server-computer)
+2026-09-13T09:10:02.601+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.computer.FileSystemServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2026-09-13T09:10:02.806+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [FileSystemService] 安全根目录: /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:10:02.906+08:00  INFO 15702 --- [mcp-server-computer] [main] o.s.a.a.m.s.MpcServerAutoConfiguration   : Registered tools5 notification: true
+2026-09-13T09:10:02.958+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.computer.FileSystemServiceTest     : Started FileSystemServiceTest in 0.494 seconds (process running for 0.861)
+2026-09-13T09:10:03.187+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=163
+2026-09-13T09:10:03.187+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] 自动创建父目录: /Users/xxliang/Documents/mcp-workspace/test-daily-report
+2026-09-13T09:10:03.188+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=25
+2026-09-13T09:10:03.189+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/sub/dir/nested.txt, contentLength=10
+2026-09-13T09:10:03.190+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] 自动创建父目录: /Users/xxliang/Documents/mcp-workspace/test-daily-report/sub/dir
+2026-09-13T09:10:03.196+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=., recursive=false
+2026-09-13T09:10:03.197+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./test-daily-report, recursive=false
+2026-09-13T09:10:03.197+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./test-daily-report, recursive=true
+2026-09-13T09:10:03.198+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./not-exist-folder, recursive=false
+2026-09-13T09:10:03.200+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=50000
+2026-09-13T09:10:03.201+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] 成功读取 /Users/xxliang/Documents/mcp-workspace/test-daily-report/2026-09-13.txt, 内容长度 25 chars
+2026-09-13T09:10:03.201+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=10
+2026-09-13T09:10:03.202+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] 成功读取 /Users/xxliang/Documents/mcp-workspace/test-daily-report/2026-09-13.txt, 内容长度 45 chars
+2026-09-13T09:10:03.202+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/nothing.txt, maxChars=50000
+2026-09-13T09:10:03.202+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report, maxChars=50000
+2026-09-13T09:10:03.202+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=../../../etc/passwd, maxChars=50000
+2026-09-13T09:10:03.202+08:00  WARN 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] 安全拦截: 路径越界：禁止访问 /Users/etc/passwd，允许范围 /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:10:03.205+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [appendFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=20
+2026-09-13T09:10:03.206+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=50000
+2026-09-13T09:10:03.206+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] 成功读取 /Users/xxliang/Documents/mcp-workspace/test-daily-report/2026-09-13.txt, 内容长度 46 chars
+2026-09-13T09:10:03.206+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [appendFile] filePath=./test-daily-report/auto-create.txt, contentLength=22
+2026-09-13T09:10:03.208+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=../../, recursive=false
+2026-09-13T09:10:03.208+08:00  WARN 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] 安全拦截: 路径越界：禁止访问 /Users/xxliang，允许范围 /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:10:03.208+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=../../../.bashrc, maxChars=50000
+2026-09-13T09:10:03.208+08:00  WARN 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] 安全拦截: 路径越界：禁止访问 /Users/.bashrc，允许范围 /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:10:03.208+08:00  INFO 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=../../hacked.txt, contentLength=7
+2026-09-13T09:10:03.209+08:00  WARN 15702 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] 安全拦截: 路径越界：禁止访问 /Users/xxliang/hacked.txt，允许范围 /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:52:18.462+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.computer.McpToolRegistrationTest   : Starting McpToolRegistrationTest using Java 17.0.9 with PID 16904 (started by xxliang in /Users/xxliang/个人资料/ddd_project/mcp-server/mcp-server-computer)
+2026-09-13T09:52:18.462+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.computer.McpToolRegistrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-09-13T09:52:18.620+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [FileSystemService] 写操作安全根目录: /Users/xxliang/Documents/mcp-workspace（只读操作不受此限制）
+2026-09-13T09:52:18.719+08:00  INFO 16904 --- [mcp-server-computer] [main] o.s.a.a.m.s.MpcServerAutoConfiguration   : Registered tools5 notification: true
+2026-09-13T09:52:18.769+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.computer.McpToolRegistrationTest   : Started McpToolRegistrationTest in 0.417 seconds (process running for 0.916)
+2026-09-13T09:52:19.083+08:00  INFO 16904 --- [mcp-server-computer] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [top.xxliang.mcpserver.computer.FileSystemServiceTest]: FileSystemServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-13T09:52:19.084+08:00  INFO 16904 --- [mcp-server-computer] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration top.xxliang.mcpserver.computer.McpServerComputerApplication for test class top.xxliang.mcpserver.computer.FileSystemServiceTest
+2026-09-13T09:52:19.086+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=163
+2026-09-13T09:52:19.087+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=25
+2026-09-13T09:52:19.087+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=./test-daily-report/sub/dir/nested.txt, contentLength=10
+2026-09-13T09:52:19.090+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=., recursive=false
+2026-09-13T09:52:19.091+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./test-daily-report, recursive=false
+2026-09-13T09:52:19.091+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./test-daily-report, recursive=true
+2026-09-13T09:52:19.091+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=./not-exist-folder, recursive=false
+2026-09-13T09:52:19.094+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=50000
+2026-09-13T09:52:19.094+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=10
+2026-09-13T09:52:19.094+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/nothing.txt, maxChars=50000
+2026-09-13T09:52:19.094+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report, maxChars=50000
+2026-09-13T09:52:19.095+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=../../../etc/passwd, maxChars=50000
+2026-09-13T09:52:19.097+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [appendFile] filePath=./test-daily-report/2026-09-13.txt, contentLength=20
+2026-09-13T09:52:19.098+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=./test-daily-report/2026-09-13.txt, maxChars=50000
+2026-09-13T09:52:19.098+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [appendFile] filePath=./test-daily-report/auto-create.txt, contentLength=22
+2026-09-13T09:52:19.100+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [listDirectory] path=../../, recursive=false
+2026-09-13T09:52:19.102+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [readFile] filePath=../../../.bashrc, maxChars=50000
+2026-09-13T09:52:19.102+08:00  INFO 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] filePath=../../hacked.txt, contentLength=7
+2026-09-13T09:52:19.102+08:00  WARN 16904 --- [mcp-server-computer] [main] t.x.m.c.domain.server.FileSystemService  : [createFile] 安全拦截: 写入被拦截：目标路径 /Users/xxliang/hacked.txt 超出允许范围 /Users/xxliang/Documents/mcp-workspace
+2026-09-13T09:52:19.120+08:00  INFO 16904 --- [mcp-server-computer] [pool-10-thread-1] i.m.c.transport.StdioClientTransport     : STDERR Message received: Error: Unable to access jarfile /Users/xxliang/个人资料/ddd_project/ai-knowledge/mcp-server-computer/target/mcp-server-computer-1.0-SNAPSHOT.jar
+2026-09-13T09:52:45.761+08:00 ERROR 16904 --- [mcp-server-computer] [pool-3-thread-1] i.m.s.transport.StdioServerTransport     : Error processing inbound message
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character (':' (code 58)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2660) ~[jackson-core-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:741) ~[jackson-core-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2054) ~[jackson-core-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780) ~[jackson-core-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:5004) ~[jackson-databind-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4910) ~[jackson-databind-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3860) ~[jackson-databind-2.18.2.jar:2.18.2]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3843) ~[jackson-databind-2.18.2.jar:2.18.2]
+	at io.modelcontextprotocol.spec.McpSchema.deserializeJsonRpcMessage(McpSchema.java:153) ~[mcp-0.7.0.jar:0.7.0]
+	at io.modelcontextprotocol.server.transport.StdioServerTransport.lambda$startInboundProcessing$5(StdioServerTransport.java:147) ~[mcp-0.7.0.jar:0.7.0]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.3.jar:3.7.3]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.3.jar:3.7.3]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+

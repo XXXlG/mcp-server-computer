@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: mcp-server-computer
+# 主要是这个，小宝
+  ai:
+    mcp:
+      server:
+        name: ${spring.application.name}
+        version: 1.0.0
+
+  main:
+    banner-mode: off
+    web-application-type: none
+
+logging:
+  pattern:
+    console:
+  file:
+    name: ${spring.application.name}.log
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+# MCP Server 自定义配置
+mcp:
+  file:
+    # 文件操作安全根目录，所有文件类 Tool 的读写都限制在此目录内
+    # 可以改成你想让 AI 访问的目录，如 /Users/xxliang/Desktop/daily-report
+    root: ${user.home}/Documents/mcp-workspace
